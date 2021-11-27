@@ -1,0 +1,203 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.20f1 (41c4e627c95f) revision 4310246'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19043.1348; Version 2009; 64bit' Language: 'pl' Physical Memory: 7963 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.20f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Wojtek/Documents/TheDarknessApproaches
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+64052
+Successfully changed project path to: C:/Users/Wojtek/Documents/TheDarknessApproaches
+C:/Users/Wojtek/Documents/TheDarknessApproaches
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 41.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.20f1 (41c4e627c95f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Wojtek/Documents/TheDarknessApproaches/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 Ti (ID=0x1f95)
+    Vendor:   
+    VRAM:     3962 MB
+    Driver:   30.0.14.7212
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56224
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001494 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 38.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.933 seconds
+Domain Reload Profiling:
+	ReloadAssembly (934ms)
+		BeginReloadAssembly (46ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (370ms)
+			LoadAssemblies (45ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (136ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (144ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (39ms)
+				BeforeProcessingInitializeOnLoad (7ms)
+				ProcessInitializeOnLoadAttributes (70ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002395 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 38.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.988 seconds
+Domain Reload Profiling:
+	ReloadAssembly (988ms)
+		BeginReloadAssembly (127ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (808ms)
+			LoadAssemblies (78ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (261ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (306ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (38ms)
+				BeforeProcessingInitializeOnLoad (58ms)
+				ProcessInitializeOnLoadAttributes (187ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2093 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.1 MB.
+System memory in use after: 93.2 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2532.
+Total: 2.749800 ms (FindLiveObjects: 0.183200 ms CreateObjectMapping: 0.083600 ms MarkObjects: 2.426200 ms  DeleteObjects: 0.055700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Scenes
+  artifactKey: Guid(8d52a9a9c28b527418bc6d599d0f9571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(8d52a9a9c28b527418bc6d599d0f9571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a80f525b1749f4cefb68d5b1788aabde') in 0.009011 seconds 
+  Import took 0.011895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.328756 seconds.
+  path: Assets/Scenes/animations
+  artifactKey: Guid(bf66a3ec3c29ed34a914042759101619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/animations using Guid(bf66a3ec3c29ed34a914042759101619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02a4e410888f1b620ca6fc57eeb9f0a9') in 0.007670 seconds 
+  Import took 0.011112 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.968365 seconds.
+  path: Assets/animations/Bieg-prawo
+  artifactKey: Guid(53c0878b48babca4f80f85e6dfcc9c79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/animations/Bieg-prawo using Guid(53c0878b48babca4f80f85e6dfcc9c79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5259bdde16d2ace0d3e617724aae425') in 0.007891 seconds 
+  Import took 0.011794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036402 seconds.
+  path: Assets/animations/Bieg-prawo/run-1.png
+  artifactKey: Guid(3aae344ef2542e143b5b0610d053f541) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/animations/Bieg-prawo/run-1.png using Guid(3aae344ef2542e143b5b0610d053f541) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dea694db24f2a05feff33d20d749410d') in 0.085377 seconds 
+  Import took 0.088984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/animations/Bieg-prawo/run-6.png
+  artifactKey: Guid(63f4f728f6f8270408822070b217acfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/animations/Bieg-prawo/run-6.png using Guid(63f4f728f6f8270408822070b217acfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1203ab9ddb25c07fd3c7c51869d695d') in 0.018816 seconds 
+  Import took 0.022276 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/animations/Bieg-prawo/run-2.png
+  artifactKey: Guid(607a3abdecdc7ba4995950d902f732fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/animations/Bieg-prawo/run-2.png using Guid(607a3abdecdc7ba4995950d902f732fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b45a49af939450d10f6f972d2248cbe') in 0.020476 seconds 
+  Import took 0.023594 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/animations/Bieg-prawo/run-5.png
+  artifactKey: Guid(bffafc82dc35f74439926c09c6889628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/animations/Bieg-prawo/run-5.png using Guid(bffafc82dc35f74439926c09c6889628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b54aef457f076de0dc1d0462ad6df368') in 0.020547 seconds 
+  Import took 0.023998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/animations/Bieg-prawo/run-3.png
+  artifactKey: Guid(0684b917157dbe64c8c4bd2224aa94b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/animations/Bieg-prawo/run-3.png using Guid(0684b917157dbe64c8c4bd2224aa94b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31be58c5a4c61db335c030da1745b584') in 0.019523 seconds 
+  Import took 0.022787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/animations/Bieg-prawo/run-4.png
+  artifactKey: Guid(3ae0b526d090bc249a66c38f37ac3ebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/animations/Bieg-prawo/run-4.png using Guid(3ae0b526d090bc249a66c38f37ac3ebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c659451134cb8d42a2577d508a9cf039') in 0.016684 seconds 
+  Import took 0.019959 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
