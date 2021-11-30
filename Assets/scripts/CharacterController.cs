@@ -33,7 +33,6 @@ public class CharacterController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         bIsOnLadder = true;
-        Debug.Log("drabka");
         drabina = collision.gameObject.GetComponent<Ladder>()?.drabina; //wykrywa kolizje z drabina
        
     }
@@ -49,7 +48,6 @@ public class CharacterController : MonoBehaviour
         }
 
         Vector2 force = (h_Input + v_Input * 2) * Time.fixedDeltaTime * charspeed;
-        Debug.Log(force);
 
         rigidbody.AddForce(force); //Movement 
     }

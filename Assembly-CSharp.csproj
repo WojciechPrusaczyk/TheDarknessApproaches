@@ -62,6 +62,8 @@
     <Compile Include="Assets\scripts\div.cs" />
     <Compile Include="Assets\scripts\AudioManager.cs" />
     <Compile Include="Assets\scripts\menu.cs" />
+    <Compile Include="Assets\scripts\HideController.cs" />
+    <Compile Include="Assets\scripts\fKeyController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
