@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ladder : MonoBehaviour
 {
     public GameObject drabina;
+    public Collider2D drabka;
     // Start is called before the first frame update
     void Start()
     {

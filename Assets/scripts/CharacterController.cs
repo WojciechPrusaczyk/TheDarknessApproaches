@@ -8,65 +8,86 @@ public class CharacterController : MonoBehaviour
     public Ladder ladder; //deklaracja drabiny
     GameObject drabina; //gameobject drabina
     Rigidbody2D rigidbody; //rigidbody, cokolwiek to jest
+    //public Collider2D gracz;
+    //public Collider2D drabka;
+    public Anim animidle;
+    public Anim animrun;
+    //public Anim animladder; //DRABINY
+    public bool bIsOnLadder = false;
     // Start is called before the first frame update
-    float charspeed = 5f; //mowi samo za siebie
-    void Start()
+    public float charspeed = 4500f; //mowi samo za siebie
+
+    
+    private void Awake()
     {
-        rigidbody = GetComponent<Rigidbody2D>(); 
+        rigidbody = GetComponent<Rigidbody2D>();
     }
 
-    private void FixedUpdate()
+    void Start()
     {
-        Vector3 m_Input = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        rigidbody.MovePosition(transform.position + m_Input * Time.deltaTime * charspeed);
+
+        //rigidbody.AddForce(transform.right * 1500f);
+        animidle.Play();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        bIsOnLadder = true;
         Debug.Log("drabka");
-        drabina = collision.gameObject.GetComponent<Ladder>()?.drabina; //wykrywa kolizje z drabina 
+        drabina = collision.gameObject.GetComponent<Ladder>()?.drabina; //wykrywa kolizje z drabina
+       
     }
+
+    private void FixedUpdate()
+    {
+        Vector3 h_Input = new Vector3(Input.GetAxis("Horizontal"), 0); //inputy Horizontal
+        Vector3 v_Input = Vector3.zero; //inputy Vertical
+        if (drabina != null) //Drabiny... drabiny...
+        {
+            v_Input = new Vector3(0, Input.GetAxis("Vertical")); //
+
+        }
+
+        Vector2 force = (h_Input + v_Input * 2) * Time.fixedDeltaTime * charspeed;
+        Debug.Log(force);
+
+        rigidbody.AddForce(force); //Movement 
+    }
+    
+
 
     private void OnTriggerExit2D(Collider2D other)
     {
         Debug.Log("Player left a ladder");
         drabina = null;
+        bIsOnLadder = false;
     }
+
 
 
     // Update is called once per frame
     void Update()
     {
-        FixedUpdate();
-    /*    if (Input.GetKey("w"))
-        {
-            if (drabina != null)
-            {
-                if (player.transform.position.x == drabina.transform.position.x)
-                {
-                    player.transform.position += new Vector3(0, charspeed);
-                }
-            }
-        }
-        if (Input.GetKey("s"))
-        {
-            if (drabina != null)
-            {
-                if (player.transform.position.y == drabina.transform.position.y)
-                {
-                    player.transform.position += new Vector3(0, -charspeed);
-                }
-            }
-            }
+       
         if (Input.GetKey("a"))
         {
-            player.transform.position += new Vector3(-charspeed, 0);
+            player.transform.rotation = Quaternion.Euler(0, 180, 0); //rotacja gracza
+            animidle.Stop();
+            animrun.Play();
+
         }
         if (Input.GetKey("d"))
         {
-            player.transform.position += new Vector3(charspeed, 0);
-        } */ //OBSOLETE
-
+            animidle.Stop();
+            animrun.Play();
+            
+            player.transform.rotation = Quaternion.Euler(0, 0, 0); //rotacja gracza
+        }
+        if(Mathf.Abs(rigidbody.velocity.magnitude) < float.Epsilon)
+        {
+            animrun.Stop();
+            animidle.Play();
+        }
 
     }
 }
