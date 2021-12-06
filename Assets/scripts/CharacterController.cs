@@ -5,6 +5,7 @@ using UnityEngine;
 public class CharacterController : MonoBehaviour
 {
     public GameObject player; //gracz
+    public GameObject fKey;
     public Ladder ladder; //deklaracja drabiny
     GameObject drabina; //gameobject drabina
     Rigidbody2D rigidbody; //rigidbody, cokolwiek to jest
@@ -56,7 +57,7 @@ public class CharacterController : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("Player left a ladder");
+        //Debug.Log("Player left a ladder");
         drabina = null;
         bIsOnLadder = false;
     }
@@ -72,7 +73,6 @@ public class CharacterController : MonoBehaviour
             player.transform.rotation = Quaternion.Euler(0, 180, 0); //rotacja gracza
             animidle.Stop();
             animrun.Play();
-
         }
         if (Input.GetKey("d"))
         {
@@ -80,6 +80,7 @@ public class CharacterController : MonoBehaviour
             animrun.Play();
             
             player.transform.rotation = Quaternion.Euler(0, 0, 0); //rotacja gracza
+            
         }
         if(Mathf.Abs(rigidbody.velocity.magnitude) < float.Epsilon)
         {

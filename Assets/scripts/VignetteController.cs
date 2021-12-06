@@ -46,14 +46,19 @@ public class VignetteController : MonoBehaviour
             ((ColorGrading)postprocess.settings[1]).saturation.value = i;
         }
         yield return new WaitForSeconds(pausing);
+        yield return new WaitForSeconds(pausing);
         ((ColorGrading)postprocess.settings[1]).colorFilter.value = Color.black;
         yield return new WaitForSeconds(BlackScreenTime);
+
+
+
+
         if (isInSafePosition == true)
         {
             ((Vignette)postprocess.settings[0]).intensity.value = 1.0f;
             Debug.Log("Jestes bezpieczny/a");
             ((ColorGrading)postprocess.settings[1]).colorFilter.value = Color.grey;
-            for (float i = 0.9f; i >= 0.3f; i -= 0.01f)
+            for (float i = 0.9f; i >= 0.4f; i -= 0.01f)
             {
                 yield return new WaitForSeconds(pausing);
                 ((Vignette)postprocess.settings[0]).intensity.value = i;

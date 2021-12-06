@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class fKeyController : MonoBehaviour
 {
-    public void OnTriggerEnter2D(Collider2D col)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (col.gameObject.tag == "hide")
-        {
-            Debug.Log("layer 10");
-        }
+            //gameObject.GetComponent<SpriteRenderer>().sortingOrder = 10;
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        gameObject.layer = -10;
+        //gameObject.GetComponent<SpriteRenderer>().sortingOrder = -10;
+        //gameObject.GetComponent<SpriteRenderer>().sortingOrder = -10;
     }
 }

@@ -7,6 +7,8 @@ TagManager:
   - key
   - exit
   - hide
+  - kamera
+  - f-key
   layers:
   - Default
   - TransparentFX
