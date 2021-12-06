@@ -5,16 +5,26 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< Updated upstream
       ticks: 637736604660082243
     m_Hash: 1883130996
+=======
+      ticks: 637743976941452607
+    m_Hash: 3852026910
+>>>>>>> Stashed changes
   m_LockFileStatus:
     m_FilePath: C:/Users/Gaming/Documents/GitHub/TheDarknessApproaches/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< Updated upstream
       ticks: 637736604660812799
     m_Hash: 3730213511
+=======
+      ticks: 637743976941472271
+    m_Hash: 2471813495
+>>>>>>> Stashed changes
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:

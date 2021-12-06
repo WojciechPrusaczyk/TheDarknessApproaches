@@ -7,6 +7,12 @@ TagManager:
   - key
   - exit
   - hide
+<<<<<<< Updated upstream
+=======
+  - kamera
+  - f-key
+  - stairs
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -38,7 +44,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - check boi
   - 
   m_SortingLayers:
   - name: Default

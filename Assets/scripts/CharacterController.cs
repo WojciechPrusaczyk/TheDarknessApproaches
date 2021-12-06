@@ -15,7 +15,7 @@ public class CharacterController : MonoBehaviour
     //public Anim animladder; //DRABINY
     public bool bIsOnLadder = false;
     // Start is called before the first frame update
-    public float charspeed = 4500f; //mowi samo za siebie
+    public float charspeed = 5000f; //mowi samo za siebie
 
     
     private void Awake()
@@ -65,6 +65,7 @@ public class CharacterController : MonoBehaviour
 
 
 
+
     // Update is called once per frame
     void Update()
     {
@@ -88,6 +89,5 @@ public class CharacterController : MonoBehaviour
             animrun.Stop();
             animidle.Play();
         }
-
     }
 }
