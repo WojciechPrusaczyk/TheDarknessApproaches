@@ -53,6 +53,7 @@
     <UnityVersion>2020.3.20f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\scripts\fKeyController.cs" />
     <Compile Include="Assets\scripts\Anim.cs" />
     <Compile Include="Assets\scripts\VignetteController.cs" />
     <Compile Include="Assets\scripts\Sound.cs" />
@@ -60,10 +61,10 @@
     <Compile Include="Assets\scripts\Ladder.cs" />
     <Compile Include="Assets\scripts\collect.cs" />
     <Compile Include="Assets\scripts\div.cs" />
+    <Compile Include="Assets\scripts\HideController.cs" />
     <Compile Include="Assets\scripts\AudioManager.cs" />
     <Compile Include="Assets\scripts\menu.cs" />
-    <Compile Include="Assets\scripts\HideController.cs" />
-    <Compile Include="Assets\scripts\fKeyController.cs" />
+    <Compile Include="Assets\scripts\randSoundController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -33,6 +33,8 @@ public class HideController : MonoBehaviour
         if (other.gameObject.CompareTag("hide") && Input.GetKey(KeyCode.F) && FindObjectOfType<VignetteController>().isInSafePosition == false)
         {
             // to siê dzieje po klikniêciu F na triggerze
+            //FindObjectOfType<AudioManager>().Play("wardrobe2");
+
             FindObjectOfType<VignetteController>().isInSafePosition = true;
             gameObject.GetComponent<SpriteRenderer>().sortingOrder = playerLayerOnHidden;
             Eyes.GetComponent<SpriteRenderer>().sortingOrder = playerLayerOnShown;
