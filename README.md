@@ -33,4 +33,4 @@ public float TimeToObscure() => Random.Range(minObscure, maxObscure);
 
 ## Notes
 
-This was my **first project in Unity**, built solo in 24 hours. The code is rough in places and the repo contains Unity-generated files that should have been gitignored — I know, I learned that lesson here. The project is archived and not actively maintained.
+This was my **first project in Unity**, built with the team in 24 hours. The code is rough in places and the repo contains Unity-generated files that should have been gitignored — I know, I learned that lesson here. The project is archived and not actively maintained.
